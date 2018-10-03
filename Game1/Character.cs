@@ -84,6 +84,7 @@ namespace Game1
             get { return elevation; }
             set { elevation = value; }
         }
+
         public Character(ContentManager content, Vector2 position)
         {
             //Initialize(content, position);

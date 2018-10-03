@@ -55,12 +55,6 @@ namespace Game1
 
     public class Game1 : Game
     {
-        //temp variables
-        TiledMap currentLevel;
-        int viewportWidth;
-        int viewportHeight;
-        Texture2D Player;
-
         //Final Variables
         SpriteBatch spriteBatch;
         GraphicsDeviceManager graphics;
@@ -69,8 +63,7 @@ namespace Game1
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
-            Content.RootDirectory = "Content";
-            
+            Content.RootDirectory = "Content"; 
         }
 
         protected override void Initialize()
@@ -82,15 +75,10 @@ namespace Game1
             MapHandler.Initialize(Content, GraphicsDevice);
             cursor = new Cursor(Content);
 
-            viewportHeight = GraphicsDevice.Viewport.Height;
-            viewportWidth = GraphicsDevice.Viewport.Width;
+            //Player = Content.Load<Texture2D>("player");
 
-
-            Player = Content.Load<Texture2D>("player");
-
-            PlayerManager.NewPlayer("Test Character 2", new stats(), Vector2.Zero, Player);
-            PlayerManager.NewPlayer("Test Character 3", new stats(), new Vector2(0,100), Player);
-
+            //PlayerManager.NewPlayer("Test Character 2", new stats(), Vector2.Zero, Player);
+            //PlayerManager.NewPlayer("Test Character 3", new stats(), new Vector2(0,100), Player);
 
             base.Initialize();
         }
@@ -101,7 +89,7 @@ namespace Game1
 
             Save.SaveName = "default";
             Save.SavedPlayerData = PlayerManager.GetPlayerParty();
-            Save.SavedCurrentLevel = currentLevel.Name;
+            Save.SavedCurrentLevel = MapHandler.currentLevel.Name;
             //actually write the file here:
             Stream streamwrite = File.Create("default.bin");
 
@@ -119,7 +107,7 @@ namespace Game1
             streamread.Close();
 
             PlayerManager.SetPlayerParty(Save.SavedPlayerData);
-            currentLevel = Content.Load<TiledMap>(Save.SavedCurrentLevel);
+            MapHandler.currentLevel = Content.Load<TiledMap>(Save.SavedCurrentLevel);
         }
 
         protected override void LoadContent()
