@@ -1,0 +1,268 @@
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\Game1.exe
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\Game1.pdb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Framework.dll
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\SharpDX.dll
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\SharpDX.XInput.dll
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Framework.xml
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\SharpDX.xml
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\SharpDX.XInput.xml
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+F:\Computer Science C# programs\2018\Game1\Game1\obj\x86\Debug\Game1.csprojResolveAssemblyReference.cache
+F:\Computer Science C# programs\2018\Game1\Game1\obj\x86\Debug\Game1.exe
+F:\Computer Science C# programs\2018\Game1\Game1\obj\x86\Debug\Game1.pdb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Animations.dll
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.dll
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Entities.dll
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Graphics.dll
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Gui.dll
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Input.dll
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Particles.dll
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.SceneGraphs.dll
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Tiled.dll
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\Newtonsoft.Json.dll
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.pdb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.xml
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Animations.pdb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Animations.xml
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Entities.pdb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Entities.xml
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Graphics.pdb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Graphics.xml
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Gui.pdb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Gui.xml
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Input.pdb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Input.xml
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Particles.pdb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Particles.xml
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.SceneGraphs.pdb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.SceneGraphs.xml
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Tiled.pdb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Tiled.xml
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\Newtonsoft.Json.xml
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\Content\Maps\TestMap.xnb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\Content\isometric_grass_and_water.xnb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\Content\part4_tileset.xnb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\Content\swamp.xnb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\Content\TestMap.xnb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\Content\TestOne.xnb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\Content\TestTwo.xnb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\Content\cursor.xnb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\Content\ObjectTest.xnb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\Content\Maps\isometric_grass_and_water.xnb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\Content\Maps\part4_tileset.xnb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\Content\player.xnb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\Content\default.xnb
+K:\Game1\Game1\bin\Windows\x86\Debug\Content\Maps\isometric_grass_and_water.xnb
+K:\Game1\Game1\bin\Windows\x86\Debug\Content\Maps\part4_tileset.xnb
+K:\Game1\Game1\bin\Windows\x86\Debug\Content\Maps\TestMap.xnb
+K:\Game1\Game1\bin\Windows\x86\Debug\Content\cursor.xnb
+K:\Game1\Game1\bin\Windows\x86\Debug\Content\default.xnb
+K:\Game1\Game1\bin\Windows\x86\Debug\Content\isometric_grass_and_water.xnb
+K:\Game1\Game1\bin\Windows\x86\Debug\Content\ObjectTest.xnb
+K:\Game1\Game1\bin\Windows\x86\Debug\Content\part4_tileset.xnb
+K:\Game1\Game1\bin\Windows\x86\Debug\Content\player.xnb
+K:\Game1\Game1\bin\Windows\x86\Debug\Content\swamp.xnb
+K:\Game1\Game1\bin\Windows\x86\Debug\Content\TestMap.xnb
+K:\Game1\Game1\bin\Windows\x86\Debug\Content\TestOne.xnb
+K:\Game1\Game1\bin\Windows\x86\Debug\Content\TestTwo.xnb
+K:\Game1\Game1\bin\Windows\x86\Debug\Game1.exe
+K:\Game1\Game1\bin\Windows\x86\Debug\Game1.pdb
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Animations.dll
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.dll
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Entities.dll
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Graphics.dll
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Gui.dll
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Input.dll
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Particles.dll
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.SceneGraphs.dll
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Tiled.dll
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Framework.dll
+K:\Game1\Game1\bin\Windows\x86\Debug\Newtonsoft.Json.dll
+K:\Game1\Game1\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+K:\Game1\Game1\bin\Windows\x86\Debug\SharpDX.dll
+K:\Game1\Game1\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+K:\Game1\Game1\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+K:\Game1\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+K:\Game1\Game1\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+K:\Game1\Game1\bin\Windows\x86\Debug\SharpDX.XInput.dll
+K:\Game1\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.pdb
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.xml
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Animations.pdb
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Animations.xml
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Entities.pdb
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Entities.xml
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Graphics.pdb
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Graphics.xml
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Gui.pdb
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Gui.xml
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Input.pdb
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Input.xml
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Particles.pdb
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Particles.xml
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.SceneGraphs.pdb
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.SceneGraphs.xml
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Tiled.pdb
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Tiled.xml
+K:\Game1\Game1\bin\Windows\x86\Debug\MonoGame.Framework.xml
+K:\Game1\Game1\bin\Windows\x86\Debug\Newtonsoft.Json.xml
+K:\Game1\Game1\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+K:\Game1\Game1\bin\Windows\x86\Debug\SharpDX.xml
+K:\Game1\Game1\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+K:\Game1\Game1\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+K:\Game1\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+K:\Game1\Game1\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+K:\Game1\Game1\bin\Windows\x86\Debug\SharpDX.XInput.xml
+K:\Game1\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+K:\Game1\Game1\obj\x86\Debug\Game1.csprojResolveAssemblyReference.cache
+K:\Game1\Game1\obj\x86\Debug\Game1.csproj.CoreCompileInputs.cache
+K:\Game1\Game1\obj\x86\Debug\Game1.exe
+K:\Game1\Game1\obj\x86\Debug\Game1.pdb
+F:\Computer Science C# programs\2018\Game1\Game1\bin\Windows\x86\Debug\Content\ObjectTest2.xnb
+K:\Game1\Game1\bin\Windows\x86\Debug\Content\ObjectTest2.xnb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\obj\x86\Debug\Game1.exe
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\obj\x86\Debug\Game1.pdb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\isometric_grass_and_water.xnb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\part4_tileset.xnb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\swamp.xnb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\TestMap.xnb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\TestOne.xnb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\TestTwo.xnb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\cursor.xnb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\ObjectTest.xnb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\player.xnb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\default.xnb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\ObjectTest2.xnb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\Maps\TestMap.xnb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\Maps\isometric_grass_and_water.xnb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\Maps\part4_tileset.xnb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Game1.exe
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Game1.pdb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Animations.dll
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.dll
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Entities.dll
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Graphics.dll
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Gui.dll
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Input.dll
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Particles.dll
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.SceneGraphs.dll
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Tiled.dll
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Framework.dll
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Newtonsoft.Json.dll
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.dll
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.XInput.dll
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.pdb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.xml
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Animations.pdb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Animations.xml
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Entities.pdb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Entities.xml
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Graphics.pdb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Graphics.xml
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Gui.pdb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Gui.xml
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Input.pdb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Input.xml
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Particles.pdb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Particles.xml
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.SceneGraphs.pdb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.SceneGraphs.xml
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Tiled.pdb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Tiled.xml
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Framework.xml
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Newtonsoft.Json.xml
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.xml
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.XInput.xml
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\obj\x86\Debug\Game1.csprojResolveAssemblyReference.cache
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\splash.xnb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\Maps\isometric_grass_and_water.xnb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\Maps\part4_tileset.xnb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\Maps\TestMap.xnb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\cursor.xnb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\default.xnb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\isometric_grass_and_water.xnb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\ObjectTest.xnb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\ObjectTest2.xnb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\part4_tileset.xnb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\player.xnb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\splash.xnb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\swamp.xnb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\TestMap.xnb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\TestOne.xnb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\TestTwo.xnb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Game1.exe
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Game1.pdb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Animations.dll
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.dll
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Entities.dll
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Graphics.dll
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Gui.dll
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Input.dll
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Particles.dll
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.SceneGraphs.dll
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Tiled.dll
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Framework.dll
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Newtonsoft.Json.dll
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.dll
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.XInput.dll
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.pdb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.xml
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Animations.pdb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Animations.xml
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Entities.pdb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Entities.xml
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Graphics.pdb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Graphics.xml
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Gui.pdb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Gui.xml
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Input.pdb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Input.xml
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Particles.pdb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Particles.xml
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.SceneGraphs.pdb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.SceneGraphs.xml
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Tiled.pdb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Extended.Tiled.xml
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\MonoGame.Framework.xml
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Newtonsoft.Json.xml
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.xml
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.XInput.xml
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+K:\Game1 - Rewritten\Game1\obj\x86\Debug\Game1.csprojResolveAssemblyReference.cache
+K:\Game1 - Rewritten\Game1\obj\x86\Debug\Game1.csproj.CoreCompileInputs.cache
+K:\Game1 - Rewritten\Game1\obj\x86\Debug\Game1.exe
+K:\Game1 - Rewritten\Game1\obj\x86\Debug\Game1.pdb

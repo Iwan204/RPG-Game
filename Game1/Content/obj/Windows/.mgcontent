@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>K:/Game1 - Rewritten/Game1/Content/Maps/TestMap.tmx</File>
+    <File>K:/Game1 - Rewritten/Game1/Content/isometric_grass_and_water.png</File>
+    <File>K:/Game1 - Rewritten/Game1/Content/part4_tileset.png</File>
+    <File>K:/Game1 - Rewritten/Game1/Content/swamp.tmx</File>
+    <File>K:/Game1 - Rewritten/Game1/Content/TestMap.tmx</File>
+    <File>K:/Game1 - Rewritten/Game1/Content/TestOne.tmx</File>
+    <File>K:/Game1 - Rewritten/Game1/Content/TestTwo.tmx</File>
+    <File>K:/Game1 - Rewritten/Game1/Content/cursor.png</File>
+    <File>K:/Game1 - Rewritten/Game1/Content/ObjectTest.tmx</File>
+    <File>K:/Game1 - Rewritten/Game1/Content/Maps/isometric_grass_and_water.png</File>
+    <File>K:/Game1 - Rewritten/Game1/Content/Maps/part4_tileset.png</File>
+    <File>K:/Game1 - Rewritten/Game1/Content/player.png</File>
+    <File>K:/Game1 - Rewritten/Game1/Content/default.png</File>
+    <File>K:/Game1 - Rewritten/Game1/Content/ObjectTest2.tmx</File>
+    <File>K:/Game1 - Rewritten/Game1/Content/splash.png</File>
+  </SourceFiles>
+</SourceFileCollection>
