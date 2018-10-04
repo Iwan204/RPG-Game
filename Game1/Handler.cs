@@ -34,6 +34,8 @@ namespace Game1
             availableMaps = new List<TiledMap>();
             mapRenderer = new TiledMapRenderer(graphicsDevice);
             currentLevel = Content.Load<TiledMap>("ObjectTest");
+            availableMaps.Add(currentLevel);
+            availableMaps.Add(content.Load<TiledMap>("DEMO"));
 
             objectLayer = currentLevel.GetLayer<TiledMapObjectLayer>("GameObjects");
             foreach (var thing in objectLayer.Objects)
@@ -55,6 +57,22 @@ namespace Game1
 
         public static void Draw(SpriteBatch spriteBatch)
         {
+            spriteBatch.Begin(transformMatrix: Camera.camera.GetViewMatrix(), samplerState: SamplerState.PointClamp);
+            mapRenderer.Draw(currentLevel, Camera.camera.GetViewMatrix());
+            spriteBatch.End();
+        }
+
+        public static void DrawMainMenu(SpriteBatch spriteBatch)
+        {
+            foreach (var item in availableMaps)
+            {
+                var name = "";
+                item.Properties.TryGetValue("Name", out name);
+                if (name == "Demo")
+                {
+                    currentLevel = item;
+                }
+            }
             spriteBatch.Begin(transformMatrix: Camera.camera.GetViewMatrix(), samplerState: SamplerState.PointClamp);
             mapRenderer.Draw(currentLevel, Camera.camera.GetViewMatrix());
             spriteBatch.End();

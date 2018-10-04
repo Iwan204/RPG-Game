@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>K:/Game1 - Rewritten/Game1/Content/part4_tileset.png</SourceFile>
+  <SourceFile>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/part4_tileset.png</SourceFile>
   <SourceTime>2017-05-06T22:39:30+01:00</SourceTime>
-  <DestFile>K:/Game1 - Rewritten/Game1/Content/bin/Windows/part4_tileset.xnb</DestFile>
-  <DestTime>2018-09-27T15:02:38.6977097+01:00</DestTime>
+  <DestFile>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/bin/Windows/part4_tileset.xnb</DestFile>
+  <DestTime>2018-10-04T22:56:34+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T15:05:36+00:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

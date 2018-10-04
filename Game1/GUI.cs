@@ -16,7 +16,9 @@ namespace Game1
 
         private static GraphicsDevice graphicsDevice;
 
-        public static List<GUIelement> Elements;
+        //public static List<GUIelement> Elements;
+
+        public static List<Button> Gui;
 
         public static SpriteBatch SpriteBatch
         {
@@ -24,14 +26,15 @@ namespace Game1
             set { spriteBatch = value; }
         }
 
+        private static Texture2D buttonTexture;
 
         public static void Draw(SpriteBatch SpriteBatch)
         {
             SpriteBatch.Begin(SpriteSortMode.Deferred);
-            foreach (var item in Elements)
-            {
-                item.Draw(SpriteBatch);
-            }
+            //foreach (var item in Elements)
+            //{
+            //    item.Draw(SpriteBatch);
+            //}
             SpriteBatch.End();
         }
 
@@ -39,20 +42,66 @@ namespace Game1
         {
             if (Keyboard.GetState().IsKeyDown(Keys.L))
             {
-                foreach (var item in Elements)
-                {
-                    item.Visible = false; 
-                }
+               // foreach (var item in Elements)
+               // {
+                //    item.Visible = false; 
+               // }
             }
         }
 
-        public static void Initialize(ContentManager content)
+        public static void UpdateMainMenu()
         {
-            Elements = new List<GUIelement>();
+
+        }
+
+        public static void DrawMainMenu(SpriteBatch SpriteBatch)
+        {
+            SpriteBatch.Begin(SpriteSortMode.Deferred);
+            foreach (var item in Gui)
+            {
+                item.Draw(SpriteBatch);
+            }
+            SpriteBatch.End();
+        }
+
+        public static void Initialize(ContentManager content, GraphicsDevice graphics)
+        {
+            //buttonTexture = content.Load<Texture2D>("256x64button");
+            //GUIelement NewGameButton = new GUIelement("New Game Button",true,new Rectangle(),buttonTexture);
+            //NewGameButton.spriteBox = new Rectangle(0, 0, 256, 64);
+            //Elements = new List<GUIelement>();
             //add all UI elements here
-            Elements.Add(new GUIelement("Main Menu", true, new Rectangle((int)Camera.camera.BoundingRectangle.X, (int)Camera.camera.BoundingRectangle.Y, (int)Camera.camera.BoundingRectangle.Width, (int)Camera.camera.BoundingRectangle.Height), content.Load<Texture2D>("splash")));
+            //Elements.Add(NewGameButton);
+            //Elements.Add(new GUIelement("Main Menu", false, new Rectangle((int)Camera.camera.BoundingRectangle.X, (int)Camera.camera.BoundingRectangle.Y, (int)Camera.camera.BoundingRectangle.Width, (int)Camera.camera.BoundingRectangle.Height), content.Load<Texture2D>("splash")));
+            Gui = new List<Button>();
+            Gui.Add(new Button(new Point((graphics.Viewport.Width / 2) - 128, graphics.Viewport.Bounds.Bottom - 64),"New Game",content));
+            Gui.Add(new Button(new Point((graphics.Viewport.Width / 2) - 384, graphics.Viewport.Bounds.Bottom - 64), "Load", content));
+            Gui.Add(new Button(new Point((graphics.Viewport.Width / 2) + 128, graphics.Viewport.Bounds.Bottom - 64), "Quit", content));
         }
     }
+
+
+
+    public class Button
+    {
+        private Texture2D texture;
+        private Rectangle bounds;
+        private Point buttonSize;
+
+        public Button(Point origin,string Text, ContentManager content)
+        {
+            buttonSize = new Point(256,64);
+            bounds = new Rectangle(origin, buttonSize);
+            texture = content.Load<Texture2D>("256x64button");
+        }
+
+        public void Draw(SpriteBatch spriteBatch)
+        {
+            spriteBatch.Draw(texture, bounds, Color.White);
+        }
+    }
+
+
 
     class GUIelement : Entity
     {

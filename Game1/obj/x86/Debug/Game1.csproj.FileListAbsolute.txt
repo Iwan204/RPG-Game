@@ -266,3 +266,7 @@ K:\Game1 - Rewritten\Game1\obj\x86\Debug\Game1.csprojResolveAssemblyReference.ca
 K:\Game1 - Rewritten\Game1\obj\x86\Debug\Game1.csproj.CoreCompileInputs.cache
 K:\Game1 - Rewritten\Game1\obj\x86\Debug\Game1.exe
 K:\Game1 - Rewritten\Game1\obj\x86\Debug\Game1.pdb
+K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\256x64button.xnb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\256x64button.xnb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\DEMO.xnb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\TestTileset.xnb

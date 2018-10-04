@@ -4,20 +4,23 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>K:/Game1 - Rewritten/Game1/Content/Maps/TestMap.tmx</File>
-    <File>K:/Game1 - Rewritten/Game1/Content/isometric_grass_and_water.png</File>
-    <File>K:/Game1 - Rewritten/Game1/Content/part4_tileset.png</File>
-    <File>K:/Game1 - Rewritten/Game1/Content/swamp.tmx</File>
-    <File>K:/Game1 - Rewritten/Game1/Content/TestMap.tmx</File>
-    <File>K:/Game1 - Rewritten/Game1/Content/TestOne.tmx</File>
-    <File>K:/Game1 - Rewritten/Game1/Content/TestTwo.tmx</File>
-    <File>K:/Game1 - Rewritten/Game1/Content/cursor.png</File>
-    <File>K:/Game1 - Rewritten/Game1/Content/ObjectTest.tmx</File>
-    <File>K:/Game1 - Rewritten/Game1/Content/Maps/isometric_grass_and_water.png</File>
-    <File>K:/Game1 - Rewritten/Game1/Content/Maps/part4_tileset.png</File>
-    <File>K:/Game1 - Rewritten/Game1/Content/player.png</File>
-    <File>K:/Game1 - Rewritten/Game1/Content/default.png</File>
-    <File>K:/Game1 - Rewritten/Game1/Content/ObjectTest2.tmx</File>
-    <File>K:/Game1 - Rewritten/Game1/Content/splash.png</File>
+    <File>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/Maps/TestMap.tmx</File>
+    <File>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/isometric_grass_and_water.png</File>
+    <File>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/part4_tileset.png</File>
+    <File>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/swamp.tmx</File>
+    <File>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/TestMap.tmx</File>
+    <File>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/TestOne.tmx</File>
+    <File>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/TestTwo.tmx</File>
+    <File>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/cursor.png</File>
+    <File>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/ObjectTest.tmx</File>
+    <File>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/Maps/isometric_grass_and_water.png</File>
+    <File>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/Maps/part4_tileset.png</File>
+    <File>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/player.png</File>
+    <File>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/default.png</File>
+    <File>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/ObjectTest2.tmx</File>
+    <File>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/splash.png</File>
+    <File>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/256x64button.png</File>
+    <File>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/DEMO.TMX</File>
+    <File>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/TestTileset.png</File>
   </SourceFiles>
 </SourceFileCollection>

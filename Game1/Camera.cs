@@ -22,26 +22,32 @@ namespace Game1
 
         public static void Update()
         {
-            //move camera with mouse
-            if (Mouse.GetState().RightButton == ButtonState.Pressed)
-            {
-                pointTwo = new Vector2(Mouse.GetState().Position.X, Mouse.GetState().Position.Y);
-                float camX = (pointOne.X - pointTwo.X);
-                float camY = (pointOne.Y - pointTwo.Y);
-                camera.Move(new Vector2(camX, camY));
+                //move camera with mouse
+                if (Mouse.GetState().RightButton == ButtonState.Pressed)
+                {
+                    pointTwo = new Vector2(Mouse.GetState().Position.X, Mouse.GetState().Position.Y);
+                    float camX = (pointOne.X - pointTwo.X);
+                    float camY = (pointOne.Y - pointTwo.Y);
+                    camera.Move(new Vector2(camX, camY));
+                }
+                pointOne = new Vector2(Mouse.GetState().Position.X, Mouse.GetState().Position.Y);
+                //rotate camera
+                if (Keyboard.GetState().IsKeyDown(Keys.R))
+                {
+                    Console.WriteLine("R key pressed!");
+                    camera.Rotate(0.0075f);
+                }
+                if (Keyboard.GetState().IsKeyDown(Keys.Q))
+                {
+                    Console.WriteLine("Q key pressed!");
+                    camera.Rotate(-0.0075f);
+                }
             }
-            pointOne = new Vector2(Mouse.GetState().Position.X, Mouse.GetState().Position.Y);
-            //rotate camera
-            if (Keyboard.GetState().IsKeyDown(Keys.R))
-            {
-                Console.WriteLine("R key pressed!");
-                camera.Rotate(0.0075f);
-            }
-            if (Keyboard.GetState().IsKeyDown(Keys.Q))
-            {
-                Console.WriteLine("Q key pressed!");
-                camera.Rotate(-0.0075f);
-            }
+        public static void UpdateMainMenu(GameTime time)
+        {
+            camera.Move(new Vector2(50,50) * time.ElapsedGameTime.Milliseconds);
         }
-    }
+
+        }
 }
+

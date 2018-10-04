@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/isometric_grass_and_water.png</SourceFile>
-  <SourceTime>2017-06-13T13:43:14+01:00</SourceTime>
-  <DestFile>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/bin/Windows/isometric_grass_and_water.xnb</DestFile>
-  <DestTime>2018-10-04T22:56:34+01:00</DestTime>
+  <SourceFile>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/TestTileset.png</SourceFile>
+  <SourceTime>2018-10-04T23:14:42+01:00</SourceTime>
+  <DestFile>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/bin/Windows/TestTileset.xnb</DestFile>
+  <DestTime>2018-10-04T23:17:48+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T15:05:36+00:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

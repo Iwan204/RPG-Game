@@ -53,17 +53,25 @@ namespace Game1
         public string SavedCurrentLevel;
     }
 
+    enum GameState
+    {
+        MainMenu,
+        Pause,
+        GameplayLoop,
+    }
+
     public class Game1 : Game
     {
         //Final Variables
         SpriteBatch spriteBatch;
         GraphicsDeviceManager graphics;
         Cursor cursor;
+        GameState gameState;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
-            Content.RootDirectory = "Content"; 
+            Content.RootDirectory = "Content";
         }
 
         protected override void Initialize()
@@ -71,10 +79,10 @@ namespace Game1
             //Final Initialisations
             Camera.Initialise(GraphicsDevice);
             PlayerManager.Initialize(Content,GraphicsDevice);
-            GUI.Initialize(Content);
+            GUI.Initialize(Content,GraphicsDevice);
             MapHandler.Initialize(Content, GraphicsDevice);
             cursor = new Cursor(Content);
-
+            gameState = GameState.MainMenu; //set default gamestate
             //Player = Content.Load<Texture2D>("player");
 
             //PlayerManager.NewPlayer("Test Character 2", new stats(), Vector2.Zero, Player);
@@ -127,11 +135,28 @@ namespace Game1
             //Final Updates
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-            MapHandler.Update(gameTime);
-            cursor.Update(gameTime);
-            PlayerManager.Update(gameTime);
-            Camera.Update();
-            GUI.Update();
+
+            //gamestate switch
+            switch (gameState)
+            {
+                case GameState.MainMenu:
+                    //Camera.UpdateMainMenu(gameTime);
+                    MapHandler.Update(gameTime);
+                    GUI.UpdateMainMenu();
+                    break;
+                case GameState.Pause:
+                    break;
+                case GameState.GameplayLoop:
+                    MapHandler.Update(gameTime);
+                    PlayerManager.Update(gameTime);
+                    Camera.Update();
+                    GUI.Update();
+                    break;
+                default:
+                    break;
+            }
+
+            cursor.Update(gameTime); //independent of gamestate
 
             //testing updates
             if (Keyboard.GetState().IsKeyDown(Keys.P))
@@ -146,19 +171,41 @@ namespace Game1
             base.Update(gameTime);
         } 
 
+        public void UpdateMainMenu()
+        {
+
+        }
+
+        public void UpdatePaused()
+        {
+
+        }
+
         protected override void Draw(GameTime gameTime)
         {
             //Final Draws
             GraphicsDevice.Clear(Color.GhostWhite);
 
-            //Use Elevation to order draws
-            MapHandler.DrawLayer(spriteBatch, "Tile Layer 1"); //ground layer
-            MapHandler.DrawLayer(spriteBatch, "Tile Layer 2"); //decoration layer
-            PlayerManager.DrawElevation(spriteBatch, 0);
-            MapHandler.DrawLayer(spriteBatch, "Tile Layer 3"); //elevated layer
-            PlayerManager.DrawElevation(spriteBatch, 1);
-
-            GUI.Draw(spriteBatch);
+            switch (gameState)
+            {
+                case GameState.MainMenu:
+                    MapHandler.DrawMainMenu(spriteBatch);
+                    GUI.DrawMainMenu(spriteBatch);
+                    break;
+                case GameState.Pause:
+                    break;
+                case GameState.GameplayLoop:
+                    //Use Elevation to order draws
+                    MapHandler.DrawLayer(spriteBatch, "Tile Layer 1"); //ground layer
+                    MapHandler.DrawLayer(spriteBatch, "Tile Layer 2"); //decoration layer
+                    PlayerManager.DrawElevation(spriteBatch, 0);
+                    MapHandler.DrawLayer(spriteBatch, "Tile Layer 3"); //elevated layer
+                    PlayerManager.DrawElevation(spriteBatch, 1);
+                    GUI.Draw(spriteBatch);
+                    break;
+                default:
+                    break;
+            }
 
             cursor.Draw(spriteBatch);
 
