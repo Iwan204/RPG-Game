@@ -141,7 +141,7 @@ namespace Game1
             switch (gameState)
             {
                 case GameState.MainMenu:
-                    //Camera.UpdateMainMenu(gameTime);
+                    Camera.UpdateMainMenu(gameTime);
                     MapHandler.Update(gameTime);
                     GUI.UpdateMainMenu();
                     break;
