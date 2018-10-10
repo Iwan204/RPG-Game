@@ -58,6 +58,7 @@ namespace Game1
         MainMenu,
         Pause,
         GameplayLoop,
+        Combat,
     }
 
     public class Game1 : Game
@@ -146,11 +147,13 @@ namespace Game1
                     break;
                 case GameState.Pause:
                     break;
-                case GameState.GameplayLoop:
+                case GameState.GameplayLoop: //normal gameplay
                     MapHandler.Update(gameTime);
                     PlayerManager.Update(gameTime);
                     Camera.Update();
                     GUI.Update();
+                    break;
+                case GameState.Combat: //in combat
                     break;
                 default:
                     break;

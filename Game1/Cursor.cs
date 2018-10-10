@@ -70,7 +70,6 @@ namespace Game1
             }
         }
 
-
         public Vector2 Tile(Vector2 point)
         {
             Vector2 tempPt = new Vector2(0, 0);
