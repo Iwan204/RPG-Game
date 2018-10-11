@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/256x64button.png</SourceFile>
-  <SourceTime>2018-10-04T12:09:28+01:00</SourceTime>
-  <DestFile>F:/Computer Science C# programs/2018/Game1 - Rewritten/Game1/Content/bin/Windows/256x64button.xnb</DestFile>
-  <DestTime>2018-10-04T22:56:42+01:00</DestTime>
+  <SourceFile>K:/Game1 - Rewritten/Game1/Content/256x64button.png</SourceFile>
+  <SourceTime>2018-10-11T02:49:14+01:00</SourceTime>
+  <DestFile>K:/Game1 - Rewritten/Game1/Content/bin/Windows/256x64button.xnb</DestFile>
+  <DestTime>2018-10-11T15:27:18.5726763+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T15:05:36+00:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

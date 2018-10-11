@@ -36,6 +36,7 @@ namespace Game1
             demoCameraQueue = new Queue<Vector2>();
             currentDemoVector = new Vector2(0,0);
             randomNum = new Random(DateTime.UtcNow.Millisecond);
+            camera.Position = new Vector2(-800, 800);
 
             SetDemoTimer();
             //aTimer.Stop();
@@ -72,7 +73,7 @@ namespace Game1
             randPointTwo = new Vector2(randomNum.Next(-2,2), randomNum.Next(-2, 2));
             float camX = (randPointOne.X - randPointTwo.X);
             float camY = (randPointOne.Y - randPointTwo.Y);
-            if (camera.BoundingRectangle.Center.X > 800 || camera.BoundingRectangle.Center.X < -800)
+            if (camera.BoundingRectangle.Center.X > 800 || camera.BoundingRectangle.Center.X < -1000 )
             {
                 if (camera.BoundingRectangle.Center.Y > 800 || camera.BoundingRectangle.Center.Y < -800)
                 {
@@ -81,22 +82,27 @@ namespace Game1
                     camY = (randPointOne.Y - newpos.Y);
                 }
             }
+
             var camVec = new Vector2(camX, camY);
             demoCameraQueue.Enqueue(camVec);
             pointOne = new Vector2(randomNum.Next(-2, 2), randomNum.Next(-2, 2));
-
+            
             camera.Move(currentDemoVector);
         }
 
         public static void OnDemoMovement(Object source, ElapsedEventArgs e)
         {
-            currentDemoVector = demoCameraQueue.Dequeue();
+            if (demoCameraQueue.Count != 0)
+            {
+                currentDemoVector = demoCameraQueue.Dequeue();
+            }
+            //currentDemoVector = demoCameraQueue.Dequeue();
             //camera.Move(demoCameraQueue.Dequeue() / 50f);
         }
 
         private static void SetDemoTimer()
         {
-            aTimer = new Timer(1000);
+            aTimer = new Timer(2000);
             aTimer.Elapsed += OnDemoMovement;
             aTimer.AutoReset = true;
             aTimer.Enabled = true;

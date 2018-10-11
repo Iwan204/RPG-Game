@@ -174,3 +174,8 @@
 /processorParam:TextureFormat=Color
 /build:TestTileset.png
 
+#begin DEMO2.tmx
+/importer:TiledMapImporter
+/processor:TiledMapProcessor
+/build:DEMO2.tmx
+

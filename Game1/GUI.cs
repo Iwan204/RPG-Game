@@ -112,6 +112,7 @@ namespace Game1
             switch (buttonAction)
             {
                 case ButtonAction.NewGame:
+                    MapHandler.LoadMap("Objecttest");
                     break;
                 case ButtonAction.LoadGame:
                     break;

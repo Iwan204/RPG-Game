@@ -84,7 +84,7 @@ namespace Game1
             GUI.Initialize(Content,GraphicsDevice);
             MapHandler.Initialize(Content, GraphicsDevice);
             cursor = new Cursor(Content);
-            gameState = GameState.MainMenu; //set default gamestate
+            gameState = GameState.GameplayLoop; //set default gamestate
             //Player = Content.Load<Texture2D>("player");
 
             //PlayerManager.NewPlayer("Test Character 2", new stats(), Vector2.Zero, Player);
@@ -143,7 +143,7 @@ namespace Game1
             {
                 case GameState.MainMenu:
                     Camera.UpdateMainMenu(gameTime);
-                    MapHandler.Update(gameTime);
+                    MapHandler.UpdateMainMenu(gameTime);
                     GUI.UpdateMainMenu();
                     break;
                 case GameState.Pause:
