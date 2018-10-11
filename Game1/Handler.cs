@@ -21,6 +21,7 @@ namespace Game1
         public static List<TiledMap> availableMaps;
         public static TiledMapRenderer mapRenderer;
         public static TiledMap currentLevel;
+        public static string mapName;
         public static TiledMapObjectLayer objectLayer;
         public static Vector2 playerSpawn;
 
@@ -33,11 +34,11 @@ namespace Game1
             graphicsDevice = graphics;
             availableMaps = new List<TiledMap>();
             mapRenderer = new TiledMapRenderer(graphicsDevice);
-            currentLevel = Content.Load<TiledMap>("ObjectTest");
-            availableMaps.Add(currentLevel);
-            availableMaps.Add(content.Load<TiledMap>("DEMO"));
-
+            availableMaps.Add(content.Load<TiledMap>("DEMO2"));
+            availableMaps.Add(content.Load<TiledMap>("ObjectTest"));
+            currentLevel = availableMaps.First();
             objectLayer = currentLevel.GetLayer<TiledMapObjectLayer>("GameObjects");
+            mapName = "ObjectTest";
             foreach (var thing in objectLayer.Objects)
             {
                 if (thing.Name == "Playerspawn")
@@ -50,8 +51,44 @@ namespace Game1
 
         }
 
+        public static void LoadMap(string loadMapName)
+        {
+            //if the current map is loaded
+            //note: make map, mapname and objectlayer a struct called level for easy access
+            if (loadMapName != mapName)
+            {
+                foreach (var map in availableMaps)
+                {
+                    var nameToComapre = "";
+                    map.Properties.TryGetValue("MapName", out nameToComapre);
+                    if (nameToComapre == loadMapName)
+                    {
+                        //map found in available maps
+                        currentLevel = map;
+                        objectLayer = currentLevel.GetLayer<TiledMapObjectLayer>("GameObjects");
+                        mapName = loadMapName;
+                        //set parameters from objects in map
+                        foreach (var entity in objectLayer.Objects)
+                        {
+                            //camerastart parameter
+                            if (entity.Name == "CameraStart")
+                            {
+                                Camera.camera.Position = entity.Position;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         public static void Update(GameTime gameTime)
         {
+            mapRenderer.Update(currentLevel, gameTime);
+        }
+
+        public static void UpdateMainMenu(GameTime gameTime)
+        {
+            LoadMap("Demo");
             mapRenderer.Update(currentLevel, gameTime);
         }
 
@@ -64,15 +101,7 @@ namespace Game1
 
         public static void DrawMainMenu(SpriteBatch spriteBatch)
         {
-            foreach (var item in availableMaps)
-            {
-                var name = "";
-                item.Properties.TryGetValue("Name", out name);
-                if (name == "Demo")
-                {
-                    currentLevel = item;
-                }
-            }
+            
             spriteBatch.Begin(transformMatrix: Camera.camera.GetViewMatrix(), samplerState: SamplerState.PointClamp);
             mapRenderer.Draw(currentLevel, Camera.camera.GetViewMatrix());
             spriteBatch.End();
