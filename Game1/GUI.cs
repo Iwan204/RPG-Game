@@ -74,25 +74,52 @@ namespace Game1
             //Elements.Add(NewGameButton);
             //Elements.Add(new GUIelement("Main Menu", false, new Rectangle((int)Camera.camera.BoundingRectangle.X, (int)Camera.camera.BoundingRectangle.Y, (int)Camera.camera.BoundingRectangle.Width, (int)Camera.camera.BoundingRectangle.Height), content.Load<Texture2D>("splash")));
             Gui = new List<Button>();
-            Gui.Add(new Button(new Point((graphics.Viewport.Width / 2) - 128, graphics.Viewport.Bounds.Bottom - 64),"New Game",content));
-            Gui.Add(new Button(new Point((graphics.Viewport.Width / 2) - 384, graphics.Viewport.Bounds.Bottom - 64), "Load", content));
-            Gui.Add(new Button(new Point((graphics.Viewport.Width / 2) + 128, graphics.Viewport.Bounds.Bottom - 64), "Quit", content));
+            Gui.Add(new Button(new Point((graphics.Viewport.Width / 2) - 128, graphics.Viewport.Bounds.Bottom - 64),"New Game",content, ButtonAction.NewGame));
+            Gui.Add(new Button(new Point((graphics.Viewport.Width / 2) - 384, graphics.Viewport.Bounds.Bottom - 64), "Load", content, ButtonAction.LoadGame));
+            Gui.Add(new Button(new Point((graphics.Viewport.Width / 2) + 128, graphics.Viewport.Bounds.Bottom - 64), "Quit", content, ButtonAction.Quit));
         }
     }
 
-
+    public enum ButtonAction
+    {
+        NewGame,
+        LoadGame,
+        Quit,
+    }
 
     public class Button
     {
         private Texture2D texture;
         private Rectangle bounds;
         private Point buttonSize;
+        private ButtonAction buttonAction;
 
-        public Button(Point origin,string Text, ContentManager content)
+        public Button(Point origin,string Text, ContentManager content, ButtonAction action)
         {
             buttonSize = new Point(256,64);
             bounds = new Rectangle(origin, buttonSize);
             texture = content.Load<Texture2D>("256x64button");
+            buttonAction = action;
+        }
+
+        public void Update()
+        {
+            
+        }
+
+        public void Clicked()
+        {
+            switch (buttonAction)
+            {
+                case ButtonAction.NewGame:
+                    break;
+                case ButtonAction.LoadGame:
+                    break;
+                case ButtonAction.Quit:
+                    break;
+                default:
+                    break;
+            }
         }
 
         public void Draw(SpriteBatch spriteBatch)

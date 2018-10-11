@@ -2,6 +2,13 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
+using System.IO;
+using System.Xml.Serialization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Timers;
+using System.Collections.Generic;
 using MonoGame.Extended;
 
 namespace Game1
@@ -14,7 +21,10 @@ namespace Game1
         static Vector2 pointTwo;
         static Vector2 randPointOne;
         static Vector2 randPointTwo;
+        static Queue<Vector2> demoCameraQueue;
+        static Vector2 currentDemoVector;
 
+        private static Timer aTimer;
 
         public static void Initialise(GraphicsDevice graphicsDevice)
         {
@@ -23,6 +33,13 @@ namespace Game1
             pointTwo = new Vector2();
             randPointOne = new Vector2();
             randPointTwo = new Vector2();
+            demoCameraQueue = new Queue<Vector2>();
+            currentDemoVector = new Vector2(0,0);
+            randomNum = new Random(DateTime.UtcNow.Millisecond);
+
+            SetDemoTimer();
+            //aTimer.Stop();
+            //aTimer.Dispose();
         }
 
         public static void Update()
@@ -48,16 +65,44 @@ namespace Game1
                     camera.Rotate(-0.0075f);
                 }
             }
+
         public static void UpdateMainMenu(GameTime time)
         {
-            randomNum = new Random(DateTime.UtcNow.Millisecond);
-            randPointTwo = new Vector2(randomNum.Next(1,50), randomNum.Next(1, 50));
+
+            randPointTwo = new Vector2(randomNum.Next(-2,2), randomNum.Next(-2, 2));
             float camX = (randPointOne.X - randPointTwo.X);
             float camY = (randPointOne.Y - randPointTwo.Y);
-            camera.Move(new Vector2(camX, camY));
-            pointOne = new Vector2(randomNum.Next(1, 50), randomNum.Next(1, 50));
+            if (camera.BoundingRectangle.Center.X > 800 || camera.BoundingRectangle.Center.X < -800)
+            {
+                if (camera.BoundingRectangle.Center.Y > 800 || camera.BoundingRectangle.Center.Y < -800)
+                {
+                    var newpos = new Vector2(-800,800);
+                    camX = (randPointOne.X - newpos.X);
+                    camY = (randPointOne.Y - newpos.Y);
+                }
+            }
+            var camVec = new Vector2(camX, camY);
+            demoCameraQueue.Enqueue(camVec);
+            pointOne = new Vector2(randomNum.Next(-2, 2), randomNum.Next(-2, 2));
+
+            camera.Move(currentDemoVector);
         }
 
+        public static void OnDemoMovement(Object source, ElapsedEventArgs e)
+        {
+            currentDemoVector = demoCameraQueue.Dequeue();
+            //camera.Move(demoCameraQueue.Dequeue() / 50f);
         }
+
+        private static void SetDemoTimer()
+        {
+            aTimer = new Timer(1000);
+            aTimer.Elapsed += OnDemoMovement;
+            aTimer.AutoReset = true;
+            aTimer.Enabled = true;
+        }
+
+
+    }
 }
-
+//25 * 32 = 800 middle of map Y

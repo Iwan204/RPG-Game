@@ -53,7 +53,7 @@ namespace Game1
         public string SavedCurrentLevel;
     }
 
-    enum GameState
+    public enum GameState
     {
         MainMenu,
         Pause,
@@ -61,13 +61,14 @@ namespace Game1
         Combat,
     }
 
+
     public class Game1 : Game
     {
         //Final Variables
         SpriteBatch spriteBatch;
         GraphicsDeviceManager graphics;
         Cursor cursor;
-        GameState gameState;
+        public GameState gameState;
 
         public Game1()
         {
@@ -141,7 +142,7 @@ namespace Game1
             switch (gameState)
             {
                 case GameState.MainMenu:
-                    //Camera.UpdateMainMenu(gameTime);
+                    Camera.UpdateMainMenu(gameTime);
                     MapHandler.Update(gameTime);
                     GUI.UpdateMainMenu();
                     break;
