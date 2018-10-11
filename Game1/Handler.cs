@@ -15,12 +15,25 @@ using MonoGame.Extended.Tiled.Graphics;
 
 namespace Game1
 {
+    public struct Level
+    {
+        public TiledMap Map;
+        public string MapName;
+        public TiledMapObjectLayer ObjectLayer;
+
+        public Level(TiledMap map)
+        {
+            Map = map;
+            map.Properties.TryGetValue("MapName", out MapName);
+            ObjectLayer = map.GetLayer<TiledMapObjectLayer>("GameObjects");
+        }
+    }
 
     static class MapHandler
     {
-        public static List<TiledMap> availableMaps;
+        public static List<Level> availableMaps;
         public static TiledMapRenderer mapRenderer;
-        public static TiledMap currentLevel;
+        public static Level currentLevel;
         public static string mapName;
         public static TiledMapObjectLayer objectLayer;
         public static Vector2 playerSpawn;
@@ -28,18 +41,20 @@ namespace Game1
         private static ContentManager Content;
         private static GraphicsDevice graphicsDevice;
 
+       
+
         public static void Initialize(ContentManager content, GraphicsDevice graphics)
         {
             Content = content;
             graphicsDevice = graphics;
-            availableMaps = new List<TiledMap>();
+            availableMaps = new List<Level>();
             mapRenderer = new TiledMapRenderer(graphicsDevice);
-            availableMaps.Add(content.Load<TiledMap>("DEMO2"));
-            availableMaps.Add(content.Load<TiledMap>("ObjectTest"));
+            availableMaps.Add(new Level(content.Load<TiledMap>("DEMO2")));
+            availableMaps.Add(new Level(content.Load<TiledMap>("ObjectTest")));
+
             currentLevel = availableMaps.First();
-            objectLayer = currentLevel.GetLayer<TiledMapObjectLayer>("GameObjects");
-            mapName = "ObjectTest";
-            foreach (var thing in objectLayer.Objects)
+
+       /*     foreach (var thing in objectLayer.Objects)
             {
                 if (thing.Name == "Playerspawn")
                 {
@@ -47,26 +62,28 @@ namespace Game1
                     playerSpawn = thing.Position;
                     
                 }
-            }
+            } */
 
         }
+
+        
+        
 
         public static void LoadMap(string loadMapName)
         {
             //if the current map is loaded
             //note: make map, mapname and objectlayer a struct called level for easy access
-            if (loadMapName != mapName)
+            if (loadMapName != currentLevel.MapName)
             {
                 foreach (var map in availableMaps)
                 {
                     var nameToComapre = "";
-                    map.Properties.TryGetValue("MapName", out nameToComapre);
+                    map.Map.Properties.TryGetValue("MapName", out nameToComapre);
                     if (nameToComapre == loadMapName)
                     {
                         //map found in available maps
                         currentLevel = map;
-                        objectLayer = currentLevel.GetLayer<TiledMapObjectLayer>("GameObjects");
-                        mapName = loadMapName;
+
                         //set parameters from objects in map
                         foreach (var entity in objectLayer.Objects)
                         {
@@ -83,19 +100,19 @@ namespace Game1
 
         public static void Update(GameTime gameTime)
         {
-            mapRenderer.Update(currentLevel, gameTime);
+            mapRenderer.Update(currentLevel.Map, gameTime);
         }
 
         public static void UpdateMainMenu(GameTime gameTime)
         {
             LoadMap("Demo");
-            mapRenderer.Update(currentLevel, gameTime);
+            mapRenderer.Update(currentLevel.Map, gameTime);
         }
 
         public static void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Begin(transformMatrix: Camera.camera.GetViewMatrix(), samplerState: SamplerState.PointClamp);
-            mapRenderer.Draw(currentLevel, Camera.camera.GetViewMatrix());
+            mapRenderer.Draw(currentLevel.Map, Camera.camera.GetViewMatrix());
             spriteBatch.End();
         }
 
@@ -103,7 +120,7 @@ namespace Game1
         {
             
             spriteBatch.Begin(transformMatrix: Camera.camera.GetViewMatrix(), samplerState: SamplerState.PointClamp);
-            mapRenderer.Draw(currentLevel, Camera.camera.GetViewMatrix());
+            mapRenderer.Draw(currentLevel.Map, Camera.camera.GetViewMatrix());
             spriteBatch.End();
         }
 
@@ -112,7 +129,7 @@ namespace Game1
             spriteBatch.Begin(transformMatrix: Camera.camera.GetViewMatrix(), samplerState: SamplerState.PointClamp);
             try
             {
-                TiledMapLayer layer = currentLevel.GetLayer(LayerName);
+                TiledMapLayer layer = currentLevel.Map.GetLayer(LayerName);
                 mapRenderer.Draw(layer, Camera.camera.GetViewMatrix());
             }
             catch (Exception)

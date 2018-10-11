@@ -47,10 +47,10 @@ namespace Game1
     {
         public string SaveName;
         public List<PlayerData> SavedPlayerData;
-        //public List<TiledMap> SavedAvailableMaps;
         //save nonplayer objects
+        //save names of available maps
+        public string SavedCurrentLevelName;
         //save other
-        public string SavedCurrentLevel;
     }
 
     public enum GameState
@@ -84,7 +84,7 @@ namespace Game1
             GUI.Initialize(Content,GraphicsDevice);
             MapHandler.Initialize(Content, GraphicsDevice);
             cursor = new Cursor(Content);
-            gameState = GameState.GameplayLoop; //set default gamestate
+            gameState = GameState.MainMenu; //set default gamestate
             //Player = Content.Load<Texture2D>("player");
 
             //PlayerManager.NewPlayer("Test Character 2", new stats(), Vector2.Zero, Player);
@@ -99,7 +99,7 @@ namespace Game1
 
             Save.SaveName = "default";
             Save.SavedPlayerData = PlayerManager.GetPlayerParty();
-            Save.SavedCurrentLevel = MapHandler.currentLevel.Name;
+            Save.SavedCurrentLevelName = MapHandler.currentLevel.MapName;
             //actually write the file here:
             Stream streamwrite = File.Create("default.bin");
 
@@ -117,7 +117,7 @@ namespace Game1
             streamread.Close();
 
             PlayerManager.SetPlayerParty(Save.SavedPlayerData);
-            MapHandler.currentLevel = Content.Load<TiledMap>(Save.SavedCurrentLevel);
+            MapHandler.LoadMap(Save.SavedCurrentLevelName); //WILL NOT WORK PROPERLY WITHOUT ADDITION OF CODE TO SAVE/LOAD AVAILABLE MAPS
         }
 
         protected override void LoadContent()

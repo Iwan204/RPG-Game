@@ -87,6 +87,7 @@ namespace Game1
         Quit,
     }
 
+
     public class Button
     {
         private Texture2D texture;
@@ -112,7 +113,7 @@ namespace Game1
             switch (buttonAction)
             {
                 case ButtonAction.NewGame:
-                    MapHandler.LoadMap("Objecttest");
+                    MapHandler.LoadMap("ObjectTest");
                     break;
                 case ButtonAction.LoadGame:
                     break;
