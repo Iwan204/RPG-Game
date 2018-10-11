@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>K:/Game1 - Rewritten/Game1/Content/DEMO2.tmx</SourceFile>
+  <SourceTime>2018-10-11T15:26:41.5937552+01:00</SourceTime>
+  <DestFile>K:/Game1 - Rewritten/Game1/Content/bin/Windows/DEMO2.xnb</DestFile>
+  <DestTime>2018-10-11T15:27:20.4523793+01:00</DestTime>
+  <Importer>TiledMapImporter</Importer>
+  <ImporterTime>2018-05-23T11:26:24+01:00</ImporterTime>
+  <Processor>TiledMapProcessor</Processor>
+  <ProcessorTime>2018-05-23T11:26:24+01:00</ProcessorTime>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
