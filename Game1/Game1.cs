@@ -53,13 +53,7 @@ namespace Game1
         //save other
     }
 
-    public enum GameState
-    {
-        MainMenu,
-        Pause,
-        GameplayLoop,
-        Combat,
-    }
+
 
 
     public class Game1 : Game
@@ -68,8 +62,8 @@ namespace Game1
         SpriteBatch spriteBatch;
         GraphicsDeviceManager graphics;
         Cursor cursor;
-        public GameState gameState;
-
+        public string ConsoleOutput;
+        
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -79,20 +73,27 @@ namespace Game1
         protected override void Initialize()
         {
             //Final Initialisations
+            GameManager.Initialise();
             Camera.Initialise(GraphicsDevice);
             PlayerManager.Initialize(Content,GraphicsDevice);
             GUI.Initialize(Content,GraphicsDevice);
             MapHandler.Initialize(Content, GraphicsDevice);
             cursor = new Cursor(Content);
-            gameState = GameState.MainMenu; //set default gamestate
+
             //Player = Content.Load<Texture2D>("player");
 
             //PlayerManager.NewPlayer("Test Character 2", new stats(), Vector2.Zero, Player);
-            //PlayerManager.NewPlayer("Test Character 3", new stats(), new Vector2(0,100), Player);
+            //PlayerManager.NewPlayer("Test Character 3", new stats(), new Vector2(0,100), Player)
+
+            ConsoleStreamWriter ConsWtr = new ConsoleStreamWriter(ConsoleOutput);
+            //Console.SetOut(ConsWtr);
+
 
             base.Initialize();
         }
 
+
+        //old - update
         public void SaveGame()
         {
             SaveGame Save = new SaveGame();
@@ -108,7 +109,7 @@ namespace Game1
 
             streamwrite.Close();
         }
-
+        //old - update
         public void LoadGame()
         {
             Stream streamread = File.OpenRead("default.bin");
@@ -139,12 +140,12 @@ namespace Game1
                 Exit();
 
             //gamestate switch
-            switch (gameState)
+            switch (GameManager.gameState)
             {
                 case GameState.MainMenu:
                     Camera.UpdateMainMenu(gameTime);
                     MapHandler.UpdateMainMenu(gameTime);
-                    GUI.UpdateMainMenu();
+                    GUI.UpdateMainMenu(cursor.spriteBox);
                     break;
                 case GameState.Pause:
                     break;
@@ -171,6 +172,7 @@ namespace Game1
             {
                 LoadGame();
             }
+            //Console.WriteLine(ConsoleOutput); // uncomment after text implemented
 
             base.Update(gameTime);
         } 
@@ -190,7 +192,7 @@ namespace Game1
             //Final Draws
             GraphicsDevice.Clear(Color.GhostWhite);
 
-            switch (gameState)
+            switch (GameManager.gameState)
             {
                 case GameState.MainMenu:
                     MapHandler.DrawMainMenu(spriteBatch);
@@ -215,5 +217,7 @@ namespace Game1
 
             base.Draw(gameTime);
         }
+
+        
     }
 }

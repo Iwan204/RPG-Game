@@ -83,7 +83,7 @@ namespace Game1
                     {
                         //map found in available maps
                         currentLevel = map;
-
+                        objectLayer = currentLevel.ObjectLayer;
                         //set parameters from objects in map
                         foreach (var entity in objectLayer.Objects)
                         {

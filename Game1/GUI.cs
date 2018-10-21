@@ -12,6 +12,8 @@ namespace Game1
 {
     static class GUI
     {
+        public static string Console;
+
         private static SpriteBatch spriteBatch;
 
         private static GraphicsDevice graphicsDevice;
@@ -49,9 +51,12 @@ namespace Game1
             }
         }
 
-        public static void UpdateMainMenu()
+        public static void UpdateMainMenu(Rectangle MouseRect)
         {
-
+            foreach (var button in Gui)
+            {
+                button.Update(MouseRect);
+            }
         }
 
         public static void DrawMainMenu(SpriteBatch SpriteBatch)
@@ -73,6 +78,7 @@ namespace Game1
             //add all UI elements here
             //Elements.Add(NewGameButton);
             //Elements.Add(new GUIelement("Main Menu", false, new Rectangle((int)Camera.camera.BoundingRectangle.X, (int)Camera.camera.BoundingRectangle.Y, (int)Camera.camera.BoundingRectangle.Width, (int)Camera.camera.BoundingRectangle.Height), content.Load<Texture2D>("splash")));
+            Console = "";
             Gui = new List<Button>();
             Gui.Add(new Button(new Point((graphics.Viewport.Width / 2) - 128, graphics.Viewport.Bounds.Bottom - 64),"New Game",content, ButtonAction.NewGame));
             Gui.Add(new Button(new Point((graphics.Viewport.Width / 2) - 384, graphics.Viewport.Bounds.Bottom - 64), "Load", content, ButtonAction.LoadGame));
@@ -103,9 +109,18 @@ namespace Game1
             buttonAction = action;
         }
 
-        public void Update()
+        public void Update(Rectangle MouseRect)
         {
-            
+            var mouseclick = Mouse.GetState().LeftButton;
+            var mousePos = Mouse.GetState().Position;
+            if (mouseclick == ButtonState.Pressed)
+            {
+                //clicked
+                if (bounds.Contains(mousePos))
+                {
+                    Clicked();
+                }
+            }
         }
 
         public void Clicked()
@@ -113,7 +128,7 @@ namespace Game1
             switch (buttonAction)
             {
                 case ButtonAction.NewGame:
-                    MapHandler.LoadMap("ObjectTest");
+                    GameManager.NewGame();
                     break;
                 case ButtonAction.LoadGame:
                     break;
