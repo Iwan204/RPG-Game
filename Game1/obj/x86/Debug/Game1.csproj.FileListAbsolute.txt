@@ -273,3 +273,4 @@ F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Deb
 K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\TestTileset.xnb
 K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\DEMO.xnb
 K:\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\DEMO2.xnb
+F:\Computer Science C# programs\2018\Game1 - Rewritten\Game1\bin\Windows\x86\Debug\Content\DEMO2.xnb
