@@ -53,7 +53,7 @@ namespace Game1
         public string SavedCurrentLevel;
     }
 
-    enum GameState
+    public enum GameState
     {
         MainMenu,
         Pause,
@@ -61,13 +61,14 @@ namespace Game1
         Combat,
     }
 
+
     public class Game1 : Game
     {
         //Final Variables
         SpriteBatch spriteBatch;
         GraphicsDeviceManager graphics;
         Cursor cursor;
-        GameState gameState;
+        public GameState gameState;
 
         public Game1()
         {
@@ -83,7 +84,7 @@ namespace Game1
             GUI.Initialize(Content,GraphicsDevice);
             MapHandler.Initialize(Content, GraphicsDevice);
             cursor = new Cursor(Content);
-            gameState = GameState.MainMenu; //set default gamestate
+            gameState = GameState.GameplayLoop; //set default gamestate
             //Player = Content.Load<Texture2D>("player");
 
             //PlayerManager.NewPlayer("Test Character 2", new stats(), Vector2.Zero, Player);
@@ -142,7 +143,11 @@ namespace Game1
             {
                 case GameState.MainMenu:
                     Camera.UpdateMainMenu(gameTime);
+<<<<<<< HEAD
                     MapHandler.Update(gameTime);
+=======
+                    MapHandler.UpdateMainMenu(gameTime);
+>>>>>>> 26c21877a530017ad56561d67b075b751a812d3e
                     GUI.UpdateMainMenu();
                     break;
                 case GameState.Pause:
