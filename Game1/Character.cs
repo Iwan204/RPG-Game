@@ -67,8 +67,24 @@ namespace Game1
         }
     }
 
+
+
     public class Character : Entity
     {
+        private stats stats;
+
+        private AttributesStruct attributes;
+
+        public stats Stats
+        {
+            get;set;
+        }
+
+        public AttributesStruct Attributes
+        {
+            get;set;
+        }
+
         private int elevation;
 
         public bool IsSelected
@@ -99,6 +115,8 @@ namespace Game1
             spriteBox = new Rectangle((int)Position.X - 32, (int)Position.Y - 64, 32, 32);
             boundingBox = new Rectangle((int)Position.X - 32, (int)Position.Y - 64, 64, 32);
             Elevation = 0;
+            Attributes = new AttributesStruct();
+            Stats = new stats();
         }
 
         public override void Update(GameTime gameTime)
@@ -106,7 +124,10 @@ namespace Game1
             //spriteBox = new Rectangle((int)Position.X - 32, (int)Position.Y - 64, 64, 64);
             spriteBox = new Rectangle((int)Position.X - 32, (int)Position.Y - 64, 32, 32);
             boundingBox = new Rectangle((int)Position.X - 32, (int)Position.Y - 64, 64, 32);
-            //updates here
+
+
+            //stats calculation
+            //float AgeModifier = 1 + (Attributes);
         }
 
         public override void Draw(SpriteBatch spriteBatch)
@@ -115,6 +136,8 @@ namespace Game1
         }
 
     }
+
+
 
     public class NonPlayer : Character
     {
@@ -220,6 +243,8 @@ namespace Game1
             spriteBatch.Draw(sprite, spriteBox, Color.White);
         }
     }
+
+
 
     public static class PlayerManager
     {
@@ -353,6 +378,7 @@ namespace Game1
         }
     } 
 
+    /*
     public static class NPCmanager
     { 
 
@@ -413,4 +439,17 @@ namespace Game1
         }
 
     }  //wip
+    */
+
+
+
+    public class Stats
+    {
+        
+        public void update()
+        {
+            //
+
+        }
+    }
 }

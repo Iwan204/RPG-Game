@@ -27,6 +27,19 @@ namespace Game1
     {
         int Health;
         int Speed;
+        int DT; //damage threshold
+        int DR; //damage resistance
+    }
+
+    [Serializable]
+    public struct AttributesStruct
+    {
+        int Strength;
+        int Dexterity;
+        int Constitution;
+        int Intelligence;
+        int Charisma;
+        int Age;
     }
 
     [Serializable]
