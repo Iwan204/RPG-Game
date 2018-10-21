@@ -47,19 +47,13 @@ namespace Game1
     {
         public string SaveName;
         public List<PlayerData> SavedPlayerData;
-        //public List<TiledMap> SavedAvailableMaps;
         //save nonplayer objects
+        //save names of available maps
+        public string SavedCurrentLevelName;
         //save other
-        public string SavedCurrentLevel;
     }
 
-    public enum GameState
-    {
-        MainMenu,
-        Pause,
-        GameplayLoop,
-        Combat,
-    }
+
 
 
     public class Game1 : Game
@@ -68,8 +62,8 @@ namespace Game1
         SpriteBatch spriteBatch;
         GraphicsDeviceManager graphics;
         Cursor cursor;
-        public GameState gameState;
-
+        public string ConsoleOutput;
+        
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -79,27 +73,34 @@ namespace Game1
         protected override void Initialize()
         {
             //Final Initialisations
+            GameManager.Initialise();
             Camera.Initialise(GraphicsDevice);
             PlayerManager.Initialize(Content,GraphicsDevice);
             GUI.Initialize(Content,GraphicsDevice);
             MapHandler.Initialize(Content, GraphicsDevice);
             cursor = new Cursor(Content);
-            gameState = GameState.GameplayLoop; //set default gamestate
+
             //Player = Content.Load<Texture2D>("player");
 
             //PlayerManager.NewPlayer("Test Character 2", new stats(), Vector2.Zero, Player);
-            //PlayerManager.NewPlayer("Test Character 3", new stats(), new Vector2(0,100), Player);
+            //PlayerManager.NewPlayer("Test Character 3", new stats(), new Vector2(0,100), Player)
+
+            ConsoleStreamWriter ConsWtr = new ConsoleStreamWriter(ConsoleOutput);
+            //Console.SetOut(ConsWtr);
+
 
             base.Initialize();
         }
 
+
+        //old - update
         public void SaveGame()
         {
             SaveGame Save = new SaveGame();
 
             Save.SaveName = "default";
             Save.SavedPlayerData = PlayerManager.GetPlayerParty();
-            Save.SavedCurrentLevel = MapHandler.currentLevel.Name;
+            Save.SavedCurrentLevelName = MapHandler.currentLevel.MapName;
             //actually write the file here:
             Stream streamwrite = File.Create("default.bin");
 
@@ -108,7 +109,7 @@ namespace Game1
 
             streamwrite.Close();
         }
-
+        //old - update
         public void LoadGame()
         {
             Stream streamread = File.OpenRead("default.bin");
@@ -117,7 +118,7 @@ namespace Game1
             streamread.Close();
 
             PlayerManager.SetPlayerParty(Save.SavedPlayerData);
-            MapHandler.currentLevel = Content.Load<TiledMap>(Save.SavedCurrentLevel);
+            MapHandler.LoadMap(Save.SavedCurrentLevelName); //WILL NOT WORK PROPERLY WITHOUT ADDITION OF CODE TO SAVE/LOAD AVAILABLE MAPS
         }
 
         protected override void LoadContent()
@@ -139,16 +140,19 @@ namespace Game1
                 Exit();
 
             //gamestate switch
-            switch (gameState)
+            switch (GameManager.gameState)
             {
                 case GameState.MainMenu:
                     Camera.UpdateMainMenu(gameTime);
-<<<<<<< HEAD
+
                     MapHandler.Update(gameTime);
-=======
+
                     MapHandler.UpdateMainMenu(gameTime);
->>>>>>> 26c21877a530017ad56561d67b075b751a812d3e
-                    GUI.UpdateMainMenu();
+
+                    GUI.UpdateMainMenu(cursor.boundingBox);
+
+                    GUI.UpdateMainMenu(cursor.spriteBox);
+
                     break;
                 case GameState.Pause:
                     break;
@@ -175,6 +179,7 @@ namespace Game1
             {
                 LoadGame();
             }
+            //Console.WriteLine(ConsoleOutput); // uncomment after text implemented
 
             base.Update(gameTime);
         } 
@@ -194,7 +199,7 @@ namespace Game1
             //Final Draws
             GraphicsDevice.Clear(Color.GhostWhite);
 
-            switch (gameState)
+            switch (GameManager.gameState)
             {
                 case GameState.MainMenu:
                     MapHandler.DrawMainMenu(spriteBatch);
@@ -219,5 +224,7 @@ namespace Game1
 
             base.Draw(gameTime);
         }
+
+        
     }
 }
