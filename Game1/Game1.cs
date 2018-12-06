@@ -34,12 +34,12 @@ namespace Game1
     [Serializable]
     public struct AttributesStruct
     {
-        int Strength;
-        int Dexterity;
-        int Constitution;
-        int Intelligence;
-        int Charisma;
-        int Age;
+        public int Strength;
+        public int Dexterity;
+        public int Constitution;
+        public int Intelligence;
+        public int Charisma;
+        public int Age;
     }
 
     [Serializable]
@@ -67,8 +67,6 @@ namespace Game1
     }
 
 
-
-
     public class Game1 : Game
     {
         //Final Variables
@@ -87,6 +85,7 @@ namespace Game1
         {
             //Final Initialisations
             GameManager.Initialise();
+            Fonts.Initialise(Content);
             Camera.Initialise(GraphicsDevice);
             PlayerManager.Initialize(Content,GraphicsDevice);
             GUI.Initialize(Content,GraphicsDevice);
@@ -122,6 +121,7 @@ namespace Game1
 
             streamwrite.Close();
         }
+
         //old - update
         public void LoadGame()
         {
@@ -157,26 +157,29 @@ namespace Game1
             {
                 case GameState.MainMenu:
                     Camera.UpdateMainMenu(gameTime);
-
-                    MapHandler.Update(gameTime);
-
+                    //MapHandler.Update(gameTime);
                     MapHandler.UpdateMainMenu(gameTime);
-
-                    GUI.UpdateMainMenu(cursor.boundingBox);
-
+                    //GUI.UpdateMainMenu(cursor.boundingBox);
                     GUI.UpdateMainMenu(cursor.spriteBox);
-
                     break;
+
                 case GameState.Pause:
                     break;
+
                 case GameState.GameplayLoop: //normal gameplay
                     MapHandler.Update(gameTime);
                     PlayerManager.Update(gameTime);
                     Camera.Update();
                     GUI.Update();
                     break;
+
                 case GameState.Combat: //in combat
                     break;
+
+                case GameState.NewGame:
+                    GUI.UpdateNewGameMenu(cursor.spriteBox);
+                    break;
+
                 default:
                     break;
             }
@@ -219,6 +222,9 @@ namespace Game1
                     GUI.DrawMainMenu(spriteBatch);
                     break;
                 case GameState.Pause:
+                    break;
+                case GameState.NewGame:
+                    GUI.DrawNewGameMenu(spriteBatch);
                     break;
                 case GameState.GameplayLoop:
                     //Use Elevation to order draws

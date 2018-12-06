@@ -179,3 +179,10 @@
 /processor:TiledMapProcessor
 /build:DEMO2.tmx
 
+#begin MenuFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=False
+/processorParam:TextureFormat=Compressed
+/build:MenuFont.spritefont
+

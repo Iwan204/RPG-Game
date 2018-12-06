@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SourceFile>K:/Game1 - Rewritten/Game1/Content/default.png</SourceFile>
-  <SourceTime>2018-09-08T00:50:32+01:00</SourceTime>
+  <SourceTime>2018-09-08T01:50:32+01:00</SourceTime>
   <DestFile>K:/Game1 - Rewritten/Game1/Content/bin/Windows/default.xnb</DestFile>
-  <DestTime>2018-10-11T15:27:18.0398586+01:00</DestTime>
+  <DestTime>2018-11-15T14:51:20.1252681+00:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T15:05:36+00:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

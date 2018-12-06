@@ -20,7 +20,8 @@ namespace Game1
 
         //public static List<GUIelement> Elements;
 
-        public static List<Button> Gui;
+        public static List<Button> MenuGui;
+        public static List<Button> NewGameGui;
 
         public static SpriteBatch SpriteBatch
         {
@@ -53,16 +54,34 @@ namespace Game1
 
         public static void UpdateMainMenu(Rectangle MouseRect)
         {
-            foreach (var button in Gui)
+            foreach (var button in MenuGui)
             {
                 button.Update(MouseRect);
             }
         }
 
+        public static void UpdateNewGameMenu(Rectangle MouseRect)
+        {
+            foreach (var button in NewGameGui)
+            {
+                button.Update(MouseRect);
+            }
+        }
+
+        public static void DrawNewGameMenu(SpriteBatch SpriteBatch)
+        {
+            SpriteBatch.Begin(SpriteSortMode.Deferred);
+            foreach (var item in NewGameGui)
+            {
+                item.Draw(SpriteBatch);
+            }
+            SpriteBatch.End();
+        }
+
         public static void DrawMainMenu(SpriteBatch SpriteBatch)
         {
             SpriteBatch.Begin(SpriteSortMode.Deferred);
-            foreach (var item in Gui)
+            foreach (var item in MenuGui)
             {
                 item.Draw(SpriteBatch);
             }
@@ -79,10 +98,13 @@ namespace Game1
             //Elements.Add(NewGameButton);
             //Elements.Add(new GUIelement("Main Menu", false, new Rectangle((int)Camera.camera.BoundingRectangle.X, (int)Camera.camera.BoundingRectangle.Y, (int)Camera.camera.BoundingRectangle.Width, (int)Camera.camera.BoundingRectangle.Height), content.Load<Texture2D>("splash")));
             Console = "";
-            Gui = new List<Button>();
-            Gui.Add(new Button(new Point((graphics.Viewport.Width / 2) - 128, graphics.Viewport.Bounds.Bottom - 64),"New Game",content, ButtonAction.NewGame));
-            Gui.Add(new Button(new Point((graphics.Viewport.Width / 2) - 384, graphics.Viewport.Bounds.Bottom - 64), "Load", content, ButtonAction.LoadGame));
-            Gui.Add(new Button(new Point((graphics.Viewport.Width / 2) + 128, graphics.Viewport.Bounds.Bottom - 64), "Quit", content, ButtonAction.Quit));
+            MenuGui = new List<Button>();
+            MenuGui.Add(new Button(new Point((graphics.Viewport.Width / 2) - 128, graphics.Viewport.Bounds.Bottom - 64),"New Game",content, ButtonAction.NewGame));
+            MenuGui.Add(new Button(new Point((graphics.Viewport.Width / 2) - 384, graphics.Viewport.Bounds.Bottom - 64), "Load", content, ButtonAction.LoadGame));
+            MenuGui.Add(new Button(new Point((graphics.Viewport.Width / 2) + 128, graphics.Viewport.Bounds.Bottom - 64), "Quit", content, ButtonAction.Quit));
+
+            NewGameGui = new List<Button>();
+            NewGameGui.Add(new Button(new Point(0, 0),"Default",content,ButtonAction.PlayerClass));
         }
     }
 
@@ -91,6 +113,8 @@ namespace Game1
         NewGame,
         LoadGame,
         Quit,
+
+        PlayerClass,
     }
 
 
@@ -100,6 +124,8 @@ namespace Game1
         private Rectangle bounds;
         private Point buttonSize;
         private ButtonAction buttonAction;
+        private ContentManager content;
+
 
         public Button(Point origin,string Text, ContentManager content, ButtonAction action)
         {
@@ -128,11 +154,18 @@ namespace Game1
             switch (buttonAction)
             {
                 case ButtonAction.NewGame:
-                    GameManager.NewGame();
+                    GameManager.ToNewGame(content);
                     break;
                 case ButtonAction.LoadGame:
                     break;
                 case ButtonAction.Quit:
+                    break;
+                case ButtonAction.PlayerClass:
+                    if (GameManager.gameState == GameState.NewGame)
+                    {
+                        
+                        
+                    }
                     break;
                 default:
                     break;
@@ -142,10 +175,19 @@ namespace Game1
         public void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(texture, bounds, Color.White);
+            
         }
     }
 
+    static class Fonts
+    {
+        public static SpriteFont MenuFont;
 
+        public static void Initialise(ContentManager content)
+        {
+            //MenuFont = content.Load<SpriteFont>("MenuFont");
+        }
+    }
 
     class GUIelement : Entity
     {
